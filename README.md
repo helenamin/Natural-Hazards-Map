@@ -1,6 +1,5 @@
 
 # Visualizing Data with Leaflet
-The site can be accesed at : https://helenamin.github.io/leaflet-challenge/
 
 ![Grayscale View](Images/GrayScaleView.png)
 
@@ -66,7 +65,7 @@ This requires a Mapbox API key, which should be located in the config.js file. O
 # Datasets
 | # | Source | Link |
 |-|-|-|
-| 1 | USGS GeoJSON Summary | [https://github.com/fraxen/tectonicplates](https://github.com/fraxen/tectonicplates) |
+| 1 | USGS GeoJSON Summary | [https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php](https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php) |
 | 2 | Tectonic Plates GeoJson | [https://github.com/fraxen/tectonicplates](https://github.com/fraxen/tectonicplates)|
 
 
