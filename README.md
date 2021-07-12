@@ -1,6 +1,8 @@
 
 # Visualizing Data with Leaflet
-![Satellite View](images/SatelliteView.png)
+The site can be accesed at : https://helenamin.github.io/leaflet-challenge/
+
+![Grayscale View](Images/GrayScaleView.png)
 
 ## Table of Contents
 
@@ -23,9 +25,9 @@ The USGS provides earthquake data in a number of different formats, updated ever
 
 The map on the page use Leaflet that plots all of the earthquakes from the USGS data set based on their longitude and latitude. The magnitude of the earthquake has impact in the size and color of the circles representing the earthquakes on the map. Earthquakes with higher magnitudes will appear larger and darker in color. Besides that, there are popups that provide additional information about the earthquake when a circle marker is clicked. The map also consist of a a legend that provides context for the map data. Three map styles are available for the user to switch between. Both the earthquake and fault lines layers can additionally be toggled on and off.
 
-![Grayscale View](images/GrayScaleView.png)
+![Satellite View](Images/SatelliteView.png)
 
-![Outdoor View](images/OutdoorView.png)
+![Outdoor View](Images/OutdoorView.png)
 
 
 # Structure
