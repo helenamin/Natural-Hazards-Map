@@ -58,7 +58,7 @@ leaflet-challenge
 ```
 
 # Setup
-This requires a Mapbox API key, which should be located in the config.js file. Only after this step,the index.html can show the map in it.
+This requires a Mapbox API key which can be obtion free from [Mapbox](https://www.mapbox.com/). then it should be located in the config.js file under "statics/js" folder. Only after this step,the index.html can show the map in it.
 
 
 
