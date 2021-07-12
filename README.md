@@ -1,83 +1,72 @@
-# Leaflet Homework - Visualizing Data with Leaflet
 
-## Background
+# Visualizing Data with Leaflet
+![Satellite View](images/SatelliteView.png)
 
-![1-Logo](Images/1-Logo.png)
+## Table of Contents
 
-Welcome to the United States Geological Survey, or USGS for short! The USGS is responsible for providing scientific data about natural hazards, the health of our ecosystems and environment; and the impacts of climate and land-use change. Their scientists develop new methods and tools to supply timely, relevant, and useful information about the Earth and its processes. As a new hire, you will be helping them out with an exciting new project!
+- [Table of Contents](#table-of-contents)
+- [Project Intro](#Project-Intro)
+- [Structure](#Project-Structure)
+- [Setup](#Setup)
+- [Instructions](#instructions)
+- [Datasets](#Datasets)
+- [Analysis](#Analysis)
 
-The USGS is interested in building a new set of tools that will allow them visualize their earthquake data. They collect a massive amount of data from all over the world each day, but they lack a meaningful way of displaying it. Their hope is that being able to visualize their data will allow them to better educate the public and other government organizations (and hopefully secure more funding..) on issues facing our planet.
+# Project Intro
+This Project ais about providing scientific data about natural hazards, the health of our ecosystems and environment; and the impacts of climate and land-use change.
+This tool can allow scientists visualize their earthquake data. They collect a massive amount of data from all over the world each day and this data will be dispalyed using this tool.
+The USGS provides earthquake data in a number of different formats, updated every 5 minutes. For more information about USGS, visit the [USGS GeoJSON Feed](http://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php) The data set used for this project is 'All Earthquakes from the Past 7 Days'. It comes in a JSON representation of that data. The URL of this JSON is used to pull in the data for the visualization.
 
-### Before You Begin
 
-1. Create a new repository for this project called `leaflet-challenge`. **Do not add this homework to an existing repository**.
+   ![JSON](Images/JSON.png)
 
-2. Clone the new repository to your computer.
 
-3. Inside your local git repository, create a directory for the Leaflet challenge. Use the folder names to correspond to the challenges: **Leaflet-Step-1** and **Leaflet-Step-2**.
+The map on the page use Leaflet that plots all of the earthquakes from the USGS data set based on their longitude and latitude. The magnitude of the earthquake has impact in the size and color of the circles representing the earthquakes on the map. Earthquakes with higher magnitudes will appear larger and darker in color. Besides that, there are popups that provide additional information about the earthquake when a circle marker is clicked. The map also consist of a a legend that provides context for the map data. Three map styles are available for the user to switch between. Both the earthquake and fault lines layers can additionally be toggled on and off.
 
-4. This homeworks utilizes both **html** and **Javascript** so be sure to add all the necessary files. These will be the main files to run for analysis.
+![Grayscale View](images/GrayScaleView.png)
 
-5. Push the above changes to GitHub or GitLab.
+![Outdoor View](images/OutdoorView.png)
 
-## Your Task
 
-### Level 1: Basic Visualization
+# Structure
+```
+ 
+leaflet-challenge   
+|  
+|    
+|__ index.html                          # landing html page
+|__ README.md                           # read me file
+|
+|__ static/                              
+|   |__css/                             # Directory for css stylesheets
+|   |  |__ style.css                              
+|   |
+|   |__data/                            # Directory for the data files
+|   |  |__ PB2002_boundaries.json       # Tectonic plate geojson
+|   | 
+|   |__js/                              # Directory for javscript code
+|      |__ logic.js                     # Primary javascript code for site
+|      |__ config.js                    # Mapbox API key needs to be inserted here
+|      
+|__ Images/                             # Directory for the Image files
+    |__GrayScaleView.png
+    |__ Json.png
+    |__ OutdoorView.png
+    |__ SatelliteView.png                        
 
-![2-BasicMap](Images/2-BasicMap.png)
+```
 
-Your first task is to visualize an earthquake data set.
+# Setup
+This requires a Mapbox API key, which should be located in the config.js file. Only after this step,the index.html can show the map in it.
 
-1. **Get your data set**
 
-   ![3-Data](Images/3-Data.png)
 
-   The USGS provides earthquake data in a number of different formats, updated every 5 minutes. Visit the [USGS GeoJSON Feed](http://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php) page and pick a data set to visualize. When you click on a data set, for example 'All Earthquakes from the Past 7 Days', you will be given a JSON representation of that data. You will be using the URL of this JSON to pull in the data for our visualization.
+# Datasets
+| # | Source | Link |
+|-|-|-|
+| 1 | USGS GeoJSON Summary | [https://github.com/fraxen/tectonicplates](https://github.com/fraxen/tectonicplates) |
+| 2 | Tectonic Plates GeoJson | [https://github.com/fraxen/tectonicplates](https://github.com/fraxen/tectonicplates)|
 
-   ![4-JSON](Images/4-JSON.png)
 
-2. **Import & Visualize the Data**
-
-   Create a map using Leaflet that plots all of the earthquakes from your data set based on their longitude and latitude.
-
-   * Your data markers should reflect the magnitude of the earthquake in their size and color. Earthquakes with higher magnitudes should appear larger and darker in color.
-
-   * Include popups that provide additional information about the earthquake when a marker is clicked.
-
-   * Create a legend that will provide context for your map data.
-
-   * Your visualization should look something like the map above.
-
-- - -
-
-### Level 2: More Data (Optional)
-
-![5-Advanced](Images/5-Advanced.png)
-
-The USGS wants you to plot a second data set on your map to illustrate the relationship between tectonic plates and seismic activity. You will need to pull in a second data set and visualize it along side your original set of data. Data on tectonic plates can be found at <https://github.com/fraxen/tectonicplates>.
-
-In this step we are going to..
-
-* Plot a second data set on our map.
-
-* Add a number of base maps to choose from as well as separate out our two different data sets into overlays that can be turned on and off independently.
-
-* Add layer controls to our map.
-
-- - -
-
-### Assessment
-
-Your final product will be assessed on the following metrics:
-
-* Completion of assigned tasks
-
-* Visual appearance
-
-* Professionalism
-
-**Good luck!**
-
-### Copyright
-
-© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+# Contributors
+- [Helen Amin](https://github.com/helenamin)

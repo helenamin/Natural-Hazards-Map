@@ -36,7 +36,7 @@ var baseMaps = {
 // Create map object and set default layers
 var myMap = L.map("map", {
   center: [40, -74],
-  zoom: 3,
+  zoom: 4,
   layers: [satellite]
 });
 
